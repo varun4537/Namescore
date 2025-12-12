@@ -209,6 +209,10 @@ const App: React.FC = () => {
                 <ScoreGauge score={result.score} />
                 
                 <div className="text-center space-y-3">
+                  <h3 className="text-2xl font-black text-slate-900 uppercase tracking-widest border-b-2 border-slate-100 pb-2 mb-2">
+                    {name}
+                  </h3>
+
                   <div className={`
                     inline-block px-4 py-2 rounded-lg text-sm font-black uppercase tracking-widest mb-2 border-2 transform -rotate-2
                     ${result.rarityLevel === 'Mythical' ? 'bg-orange-100 text-orange-700 border-orange-400' : 
@@ -262,7 +266,7 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="p-6 text-center z-10">
         <p className="text-slate-400 text-xs font-medium uppercase tracking-widest flex items-center justify-center gap-2">
-          Powered by Gemini 2.5 <Sparkles size={10} className="text-orange-400" />
+          Name Score © 2025 <Sparkles size={10} className="text-orange-400" />
         </p>
       </footer>
     </div>
